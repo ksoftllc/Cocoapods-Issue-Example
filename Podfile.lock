@@ -1,0 +1,33 @@
+PODS:
+  - NonEmpty (0.2.0)
+  - PointFree-Validated (0.2.0):
+    - NonEmpty (~> 0.2.0)
+  - ReSwift (4.1.1)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxSwift (4.5.0)
+
+DEPENDENCIES:
+  - PointFree-Validated (~> 0.2.0)
+  - ReSwift (~> 4.1.1)
+  - RxCocoa (~> 4.5.0)
+  - RxSwift (~> 4.5.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - NonEmpty
+    - PointFree-Validated
+    - ReSwift
+    - RxCocoa
+    - RxSwift
+
+SPEC CHECKSUMS:
+  NonEmpty: ffdc4086fbb2d7b977529a1b56bd6e7d4514ad76
+  PointFree-Validated: 3c79c4daa663856dba06316337f0a2a916a51d25
+  ReSwift: d925be0033558f55bd73d92869961230dfe19d52
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+
+PODFILE CHECKSUM: 537b5b088a9422d2483b67a1f121788fe8f98993
+
+COCOAPODS: 1.5.2

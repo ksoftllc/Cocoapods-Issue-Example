@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="80G-9l-F3P">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="6MO-cM-9t2">
+            <objects>
+                <viewController title="Home" id="80G-9l-F3P" customClass="HomeScreenViewController" customModule="MemoryLeaksExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ogx-5P-ZzI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bF-TK-ddm">
+                                <rect key="frame" x="145.5" y="42.5" width="84" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.78431372549019607" green="0.5725490196078431" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="dtr-DG-eHf">
+                                <rect key="frame" x="110" y="116" width="155" height="156"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzO-cC-Xie">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="30"/>
+                                        <state key="normal" title="View Profile"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlV-w4-zV0">
+                                        <rect key="frame" x="0.0" y="42" width="155" height="30"/>
+                                        <state key="normal" title="Play Games"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgV-PE-9GT">
+                                        <rect key="frame" x="0.0" y="84" width="155" height="30"/>
+                                        <state key="normal" title="Memory Leak Example"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzx-RA-9mI">
+                                        <rect key="frame" x="0.0" y="126" width="155" height="30"/>
+                                        <state key="normal" title="Logout"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.91764705879999997" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4bF-TK-ddm" firstAttribute="centerX" secondItem="Ogx-5P-ZzI" secondAttribute="centerX" id="OCg-qN-OjR"/>
+                            <constraint firstItem="dtr-DG-eHf" firstAttribute="centerX" secondItem="Ogx-5P-ZzI" secondAttribute="centerX" id="gop-JF-Ncq"/>
+                            <constraint firstItem="Z8n-vF-HLZ" firstAttribute="top" secondItem="4bF-TK-ddm" secondAttribute="bottom" constant="-43" id="rvF-4N-PY8"/>
+                            <constraint firstItem="dtr-DG-eHf" firstAttribute="top" secondItem="4bF-TK-ddm" secondAttribute="bottom" constant="53" id="zIi-VM-K1F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Z8n-vF-HLZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="logoutButton" destination="gzx-RA-9mI" id="zki-v2-Xm5"/>
+                        <outlet property="memoryLeakExample" destination="LgV-PE-9GT" id="7Kd-cH-tJh"/>
+                        <outlet property="playGamesButton" destination="PlV-w4-zV0" id="cKF-Uf-FOq"/>
+                        <outlet property="usernameLabel" destination="4bF-TK-ddm" id="4MG-I1-8MV"/>
+                        <outlet property="viewProfileButton" destination="WzO-cC-Xie" id="YZD-PQ-9xx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mCk-wT-3sK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47" y="-371"/>
+        </scene>
+    </scenes>
+</document>
